@@ -6,7 +6,7 @@ COPY requirements.txt /app
 COPY devops /app
 
 RUN apt-get update && \
-    apt install pipx && \
+    apt-get install pipx && \
     apt-get install -y python3 python3-pip && \
     pipx install -r requirements.txt && \
     cd devops
