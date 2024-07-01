@@ -14,7 +14,7 @@ RUN apt-get update -y && \
     #my-venv/bin/pip install django && \
     #my-venv/bin/pip install virtualenv virtualenvwrapper && \
     #my-venv/bin/pip install -r requirements.txt 
-    pip install django
+    pip install django && \
     pip install -r requirements.txt
 
 ENTRYPOINT ["python3"]
