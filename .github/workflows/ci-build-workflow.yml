@@ -25,9 +25,9 @@ jobs:
         run: |
          cd examples/python-web-app
          docker build -t python-demo-app:v1 .
-         docker tag python-demo-app:v1 smritidn6docker/python-demo-app:pythn-app
+         docker tag python-demo-app:v1 smritidn6docker/python-demo-app:v1
 
       - name: Push the image to dokerhub
         run: |
          docker login --username smritidn6docker --password ${{ secrets.DOCKER_PASSWORD }}
-         docker push smritidn6docker/python-demo-app:python-app
+         docker push smritidn6docker/python-demo-app:v1
