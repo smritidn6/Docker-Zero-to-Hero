@@ -8,7 +8,7 @@ COPY devops /app
 RUN apt-get update -y && \
     #apt-get install -y python3.12-venv && \
     apt-get install -y python3 python3-pip && \ 
-    apt-get install python3-requests && \
+    apt-get install -y python3-requests && \
     #python3 -m venv my-venv && \
     #sudo -s
     #source ./my-venv/bin/activate && \
