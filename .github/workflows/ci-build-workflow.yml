@@ -30,4 +30,4 @@ jobs:
       - name: Push the image to dokerhub
         run: |
          docker login --username smritidn6docker --password ${{ secrets.DOCKER_PASSWORD }}
-         docker push frontend
+         docker push smritidn6docker/python-demo-app:v1
