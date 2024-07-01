@@ -22,7 +22,7 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-         cd python-web-app
+         cd examples/python-web-app
          docker build -t python-demo-app:v1 .
          docker tag python-demo-app:v1 smritidn6docker/python-demo-app:v1
 
